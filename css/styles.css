@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "metamorphous";
+    src: 
+        url(../fonts/metamorphous-regular-webfont.woff) format("woff"),
+        url(../fonts/metamorphous-regular-webfont.woff2) format("woff2");
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
