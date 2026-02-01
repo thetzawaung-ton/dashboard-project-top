@@ -41,7 +41,18 @@
 }
 
 .header {
-    background-color: aqua;
+    background-color: whitesmoke;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: min-content auto;
+    padding: 1rem;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+    gap: 1rem;
 }
 
 .content {
@@ -55,6 +66,13 @@ li {
     gap: 1rem;
     margin-top: 1rem;
 }
-li img {
+li img,.header img {
     height: 25px;
+}
+
+input {
+    background-color: #deddd9;
+    border: 1px solid #deddd9;
+    border-radius: 1rem;
+    outline: none;
 }
