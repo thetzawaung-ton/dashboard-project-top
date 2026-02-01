@@ -55,6 +55,13 @@
     gap: 1rem;
 }
 
+.notifications {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .content {
     background-color: rgb(21, 5, 94);
 }
@@ -66,8 +73,13 @@ li {
     gap: 1rem;
     margin-top: 1rem;
 }
-li img,.header img {
+li img,.header img:not(.profile){
     height: 25px;
+}
+
+.profile {
+    height: 35px;
+    border-radius: 35px;
 }
 
 input {
