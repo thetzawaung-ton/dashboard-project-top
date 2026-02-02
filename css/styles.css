@@ -27,6 +27,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content 1fr;
     gap: 2rem;
+    color: white;
 }
 
 .dashboard {
@@ -46,6 +47,7 @@
     grid-template-columns: 3fr 2fr;
     grid-template-rows: min-content auto;
     padding: 1rem;
+    gap: 1rem;
 }
 
 .search {
@@ -82,9 +84,48 @@ li img,.header img:not(.profile){
     border-radius: 35px;
 }
 
+.welcome-profile {
+    display: flex;  
+    align-items: center;
+    gap: 1rem;
+}
+
+.welcome-profile p:first-child {
+    font-size: 0.7rem;
+}
+
+.welcome-profile p:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.large {
+    height: 50px;
+    border-radius: 25px;
+}
+
 input {
     background-color: #deddd9;
     border: 1px solid #deddd9;
     border-radius: 1rem;
     outline: none;
+}
+
+.upload {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.upload button {
+    color: white;
+    height: 2rem;
+    width: 6rem;
+    background-color: #3366ff;
+    border: 1px solid #3366ff;
+    outline: none;
+    border-radius: 1rem;
+    place-content: center;
 }
