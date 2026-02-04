@@ -138,6 +138,7 @@ input {
     gap: 0.2rem 1rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: min-content 1fr;
+    --box-shadow: 3px 3px 3px grey;
 }
 
 .content h1 {
@@ -163,7 +164,8 @@ input {
     outline: none;
     border-radius: 0.5rem;
     padding: 1rem;
-    box-shadow: inset 0.5rem 0rem orange;
+    box-shadow: inset 0.5rem 0rem orange,
+                var(--box-shadow);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr min-content;
@@ -193,6 +195,7 @@ input {
     grid-template-columns: 1fr;
     gap: 0.5rem;
     border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
 }
 
 hr {
